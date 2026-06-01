@@ -1,0 +1,12 @@
+run = "python bot.py"
+language = "python3"
+
+[nix]
+channel = "stable-24_05"
+
+[pack]
+language = "python3"
+
+[deployment]
+run = ["sh", "-c", "python bot.py"]
+deploymentTarget = "cloudrun"
